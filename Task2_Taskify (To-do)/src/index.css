@@ -1,0 +1,135 @@
+body {
+    background: gray;
+}
+
+.noteCard {
+    min-height: 90vh;
+    background-color: #eee8ff;
+}
+
+.todoContainer {
+    box-shadow: 0px 0px 10px 0px black;
+    min-height: 65vh;
+    max-height: 72vh;
+    overflow-x: auto;
+    max-width: 550px;
+}
+
+.todoContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.addInput {
+    width: 100%;
+    border: 2px solid #a2a2aa;
+    outline: none;
+}
+
+.addBtn {
+    outline: none;
+    border: 2px solid;
+    width: 90px;
+    transition: 0.2s ease-in;
+}
+
+.trans {
+    transition: 0.2s ease-in;
+}
+
+.trans:hover {
+    transition: 0.2s ease-in;
+    transform: scale(0.96);
+}
+
+.line {
+    content: '';
+    height: 1.5px;
+    border: none;
+    outline: none;
+    background: #a2a2aa;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.mx {
+    background: #eee8ff;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid #a2a2aa;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+    opacity: 0.85;
+}
+
+.data {
+    width: 40%;
+}
+
+.buttons {
+    width: 60%;
+}
+
+.todo {
+    background: #c9c9c9;
+}
+
+.flagged {
+    background: rgb(3, 148, 3);
+}
+
+@media screen and (max-width:530px) {
+    .todo {
+        flex-direction: column;
+    }
+
+    .text {
+        font-size: 1.3rem;
+    }
+
+    .data {
+        width: 100%;
+    }
+
+    .buttons {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:332px) {
+    .heading {
+        font-size: 1rem;
+    }
+
+    .sub-heading {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 4px;
+        font-size: 0.8rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        font-size: 12px;
+    }
+}
